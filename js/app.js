@@ -1,0 +1,52 @@
+/**
+ * Created by hxsd on 2016/08/04.
+ */
+myApp = angular.module("myApp",["ionic"]);
+myApp.config(function($stateProvider,$urlRouterProvider){
+   $stateProvider.state("tabs",{
+        url:"/tabs",
+        abstract:true,
+        templateUrl:"views/tabs/tabs.html"
+    });
+    $stateProvider.state("tabs.home",{
+        url:"/home",
+        views:{"tab-home":{
+            templateUrl:"views/home/home.html",
+            controller:"homeCtrl"
+        }}
+    });
+    $stateProvider.state("tabs.songMenu",{
+        url:"/songMenu",
+        views:{"tab-home":{
+            templateUrl:"views/songMenu/songMenu.html",
+            controller:"songMenuCtrl"
+        }}
+    });
+    $stateProvider.state("tabs.radio",{
+        url:"/radio",
+        views:{"tab-home":{
+            templateUrl:"views/radio/radio.html",
+            controller:"radioCtrl"
+        }}
+    });
+    $stateProvider.state("tabs.ranking",{
+        url:"/ranking",
+        views:{"tab-home":{
+            templateUrl:"views/ranking/ranking.html",
+            controller:"rankingCtrl"
+        }}
+    });
+    $stateProvider.state("tabs.myMusic",{
+        url:"/myMusic",
+        views:{"tab-myMusic":{
+            templateUrl:"views/myMusic/myMusic.html"
+        }}
+    });
+    $stateProvider.state("tabs.forum",{
+        url:"/forum",
+        views:{"tab-forum":{
+            templateUrl:"views/forum/forum.html"
+        }}
+    });
+        $urlRouterProvider.otherwise("/tabs/home");
+});

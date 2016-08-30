@@ -1,0 +1,24 @@
+<ion-tabs class="tabs-calm tabs-top">
+    <ion-tab icon-on="ion-home" icon-off="ion-home" ui-sref="tabs.home">
+
+        <div class="row title-top">
+            <a href="#" class="col" ui-sref="tabs.home">个性推荐</a>
+            <a href="#" class="col" ui-sref="tabs.songMenu">歌单</a>
+            <a href="#" class="col" ui-sref="tabs.radio">主播电台</a>
+            <a href="#" class="col" ui-sref="tabs.ranking">排行榜</a>
+        </div>
+
+        <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+    <ion-tab icon-on="ion-ios-musical-notes" icon-off="ion-ios-musical-notes"  ui-sref="tabs.myMusic">
+        <ion-nav-view name="tab-myMusic"></ion-nav-view>
+    </ion-tab>
+    <ion-tab icon-on="ion-person-stalker" icon-off="ion-person-stalker"  ui-sref="tabs.forum">
+    <div class="row title-top">
+            <a href="#" class="col" ui-sref="tabs.forum">动态</a>
+            <a href="#" class="col" href="#">附近</a>
+            <a href="#" class="col" href="#">好友</a>
+        </div>
+        <ion-nav-view name="tab-forum"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

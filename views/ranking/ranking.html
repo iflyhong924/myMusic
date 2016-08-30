@@ -1,0 +1,30 @@
+
+<ion-view>
+    <ion-content class="ranking">
+        <div class="title1" style="border:none;"><i class="icon ion-grid"></i><span> 官方榜</span></div>
+        <ul class="list list1">
+            <li class="item item-thumbnail-left" ng-repeat="product in products1">
+                <img src="{{product.imgSrc}}">
+                <p>{{product.title1}}</p>
+                <p>{{product.title2}}</p>
+                <p>{{product.title3}}</p>
+            </li>
+        </ul>
+        <div class="title1" style="border:none;"><i class="icon ion-grid"></i><span> 全球榜</span></div>
+        <ul class="list list2">
+            <li class="item item-thumbnail-left" ng-repeat="product in products2">
+                <img src="{{product.imgSrc}}">
+                <h2>{{product.title1}}</h2>
+                <p>{{product.title2}}</p>
+            </li>
+        </ul>
+        <div class="title1" style="border:none;"><i class="icon ion-grid"></i><span> 用户榜</span></div>
+        <ul class="list list2">
+            <li class="item item-thumbnail-left" ng-repeat="product in products3">
+                <img src="{{product.imgSrc}}">
+                <h2>{{product.title1}}</h2>
+                <p>{{product.title2}}</p>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

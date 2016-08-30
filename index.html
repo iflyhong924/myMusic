@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>myMusic</title>
+    <link href="ionic/css/ionic.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <script src="ionic/js/ionic.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="views/home/home.js"></script>
+    <script src="views/songMenu/songMenu.js"></script>
+    <script src="views/radio/radio.js"></script>
+    <script src="views/ranking/ranking.js"></script>
+</head>
+<body>
+<ion-side-menus>
+    <ion-side-menu-content>
+        <ion-nav-view>
+        </ion-nav-view>
+        <ion-footer-bar class="bar-light footer">
+            <div class="left">
+                <img src="images/sa3.jpg">
+                <div class="song">
+                    <h2>七里香</h2>
+                    <p>周杰伦</p>
+                </div>
+            </div>
+            <div class="right icons">
+                <i class="icon ion-navicon"></i>
+                <i class="icon ion-ios-play"></i>
+                <i class="icon ion-ios-skipforward-outline"></i>
+            </div>
+        </ion-footer-bar>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" class="sideMenu">
+        <div style="width:100%">
+            <img style="width:100%" src="images/bg_01.jpg">
+        </div>
+        <ul class="list">
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-email-outline"></i>
+                我的消息
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-cart-outline"></i>
+                积分商城
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-navigate-outline"></i>
+                会员中心
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-albums-outline"></i>
+                在线听歌免流量
+            </li>
+            <li style="border-right:none;" class="item item-icon-left">
+                <i class="icon ion-ios-mic-outline"></i>
+                听歌识曲
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-person-outline"></i>
+                主题换肤
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-lightbulb-outline"></i>
+                夜间模式
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-clock-outline"></i>
+                定时停止播放
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-stopwatch-outline"></i>
+                音乐闹钟
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-unlocked-outline"></i>
+                驾驶模式
+            </li>
+            <li style="border:none" class="item item-icon-left">
+                <i class="icon ion-ios-cloud-outline"></i>
+                我的音乐云盘
+            </li>
+        </ul>
+        <ul class="row">
+            <li style="border-right: 1px solid #00d3fb;" class="col-50">设置</li>
+            <li class="col-50">退出应用</li>
+        </ul>
+    </ion-side-menu>
+</ion-side-menus>
+
+</body>
+</html>

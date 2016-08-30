@@ -1,0 +1,65 @@
+
+<ion-view>
+    <ion-content class="radio">
+        <div class="row1">
+            <ul class="row">
+                <li class="col"><i class="icon ion-ios-person-outline"></i><br>明星做主播</li>
+                <li class="col"><i class="icon ion-ios-mic-outline"></i><br>创作|翻唱</li>
+                <li class="col"><i class="icon ion-ios-people-outline"></i><br>脱口秀</li>
+                <li class="col"><i class="icon ion-ios-book-outline"></i><br>美文读物</li>
+            </ul>
+            <ul class="row">
+                <li class="col"><i class="icon ion-ios-musical-notes"></i><br>音乐故事</li>
+                <li class="col"><i class="icon ion-happy-outline"></i><br>情感频道</li>
+                <li class="col"><i class="icon ion-ios-bookmarks-outline"></i><br>有声小说</li>
+                <li class="col"><i class="icon ion-ios-paper-outline"></i><br>人文历史</li>
+            </ul>
+        </div>
+        <a class="box" href="#">
+            <div class="text">
+                <h2>主播电台排行榜</h2>
+                <p>最火的节目和电台，<span>每日更新!</span></p>
+            </div>
+            <img src="images/radio1_03.jpg">
+        </a>
+        <div class="title1"><i class="icon ion-grid"></i><span> 精彩节目推荐</span></div>
+        <div class="list1">
+            <ul class="list">
+                <li class="item item-thumbnail-left" style="border-top:none">
+                    <img src="images/radio_03.jpg">
+                    <h2>动感女声翻唱sia抖腿神曲cheap thrills</h2>
+                    <p> 一首要把腿抖段断的歌</p>
+                </li>
+                <li class="item item-thumbnail-left">
+                    <img src="images/radio_06.jpg">
+                    <h2>vol.105为什么你你现在不喜欢我了？</h2>
+                    <p> 时间长了感情会变淡？</p>
+                </li>
+                <li class="item item-thumbnail-left">
+                    <img src="images/radio_08.jpg">
+                    <h2>断了的弦(Cover)</h2>
+                    <p> Sis晴子唱歌可以让你循环一天</p>
+                </li>
+                <li class="item item-thumbnail-left">
+                    <img src="images/radio_10.jpg">
+                    <h2>【夜香】 香气溢远的霉干菜|投稿：福糕</h2>
+                    <p> 一言不合报复社会</p>
+                </li>
+            </ul>
+        </div>
+        <div class="title1" style="border:none;"><i class="icon ion-grid"></i><span> 每天电台精选 - 订阅更精彩</span></div>
+        <ul class="row1 clearfix">
+            <li><img src="images/sa3.jpg">动漫日语学习</li>
+            <li><img src="images/sa1.jpg">汽泡泡的音乐小窝</li>
+            <li><img src="images/sa2.jpg">Lucifer的翻唱合集</li>
+            <li><img src="images/sa4.jpg">NGA游戏谈</li>
+            <li><img src="images/sa5.jpg">治愈系古风翻唱</li>
+            <li><img src="images/sa6.jpg">竾颜音的翻唱</li>
+        </ul>
+        <div class="title1" style="border:none;"><i class="icon ion-grid"></i><span> 热门电台</span></div>
+        <ul class="row2">
+            <li ng-repeat="product in products"><img ng-src="{{product.imgSrc}}">{{product.title}}</li>
+            <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false"></ion-infinite-scroll>
+        </ul>
+    </ion-content>
+</ion-view>
